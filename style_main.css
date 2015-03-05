@@ -1,0 +1,45 @@
+@font-face{
+	font-family: quickLight;
+	src: url(assets/quicksand/Quicksand-Light.otf);
+}
+@font-face{
+	font-family: quickRegular;
+	src: url(assets/quicksand/Quicksand-Regular.otf);
+}
+
+/*
+Static page elements
+*/
+body{
+	background-color: #f9fafa;
+	font-family: quickRegular, Serif, Sans-Serif, Arial;
+	color: #000000;
+}
+a{
+	text-decoration: none;
+	color: #000000;
+}
+a:hover{
+	color: #6E6C7B;
+}
+.words{
+	max-width: 85%;
+	margin: auto;
+}
+
+/*
+Custom page elements, highest-level ordering
+*/
+#landing{
+	position: absolute;
+	text-align: center;
+	width: 100%;
+/*	top: 50%;
+	bottom: -50%;
+*/
+}
+
+#landing img{
+	width: 35%;
+	max-width: 350px;
+}
