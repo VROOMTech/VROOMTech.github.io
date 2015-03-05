@@ -42,4 +42,5 @@ Custom page elements, highest-level ordering
 #landing img{
 	width: 35%;
 	max-width: 350px;
+	margin-bottom: 25px;
 }
