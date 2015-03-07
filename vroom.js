@@ -1,7 +1,7 @@
 "use strict";
 
 window.onload = function(){
-	$("#loading").fadeOut(500);
+	$("#loading").fadeOut(0);
 
 	$("#ghub").hover(
 		function(){
