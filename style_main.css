@@ -55,22 +55,65 @@ Custom page elements, highest-level ordering
 	margin-top: 5%;
 	margin-bottom: 5%;
 }
+.link_section{
+	display: inline-block;
+	padding: 0;
+}
 #links img{
+	position: relative;
 	min-width: 32px;
 	width: 5%;
 	max-width: 48px;
 	background-color: #303030;
 	border-radius: 10px;
 	padding: 10px;
-	-webkit-transition: background-color .2s, top 0.5s, ease-in-out;
-	-moz-transition: background-color .2s, top 0.5s, ease-in-out;
-	-o-transition: background-color .2s, top 0.5s, ease-in-out;
-	transition: background-color .2s, top 0.5s, ease-in-out;
+	-webkit-transition: all 0.8s, ease-in-out;
+	-moz-transition: all 0.8s, ease-in-out;
+	-ms-transition: all 0.8s, ease-in-out;
+	-o-transition: all 0.8s, ease-in-out;
+	transition: all 0.8s, ease-in-out;
+	/*
+	-webkit-transition: background-color .5s, ease-in-out;
+	-moz-transition: background-color .5s, ease-in-out;
+	-ms-transition: background-color .5s, ease-in-out;
+	-o-transition: background-color .5s, ease-in-out;
+	transition: background-color .5s, ease-in-out;
+*/
 }
 #links img:hover{
-	background-color: #95a5a6;
+	-webkit-transform: translateY(-5px);
+	-moz-transform: translateY(-5px);
+	-ms-transform: translateY(-5px);
+	-o-transform: translateY(-5px);
+	transform: translateY(-5px);
+	background-color: #C7C8C8;
 	cursor: pointer;
-	top: -5px;
+/*	top: -5px;*/
+}
+@media screen and (max-width: 600px) {
+    #links img{
+        background-color: #C7C8C8;
+    }
+    #links img:hover{
+    	-webkit-transform: translateY(0px);
+		-moz-transform: translateY(0px);
+		-ms-transform: translateY(0px);
+		-o-transform: translateY(0px);
+		transform: translateY(0px);
+    }
+}
+.link_title{
+	position: absolute;
+	left: 9px;
+	top: 52px;
+	opacity: 0;
+	cursor: default;
+
+	-webkit-transition: all 0.8s, ease-in-out;
+	-moz-transition: all 0.8s, ease-in-out;
+	-ms-transition: all 0.8s, ease-in-out;
+	-o-transition: all 0.8s, ease-in-out;
+	transition: all 0.8s, ease-in-out;
 }
 /*
 Individual page elements, specific PER element
