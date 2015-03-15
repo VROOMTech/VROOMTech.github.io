@@ -1,5 +1,22 @@
 <!DOCTYPE HTML>
 <html>
+
+<!-- TODO: last updated 3/14/15
+		#landing
+			Scroll for more fadein and jump (not clickable)
+		#about NEW SECTION
+			3 symbols to show what we're all about?
+		#team NEW SECTION
+			similar to our project proposal pdf
+		#timeline NEW SECTION
+			calendar or some visual for everything we've been doing
+		#contact NEW SECTION
+			email form, vroomtech@gmail.com
+		#bottom nav bar
+			github link
+			email link
+	-->
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="description" content="VROOM - iSchool capstone 2015">
@@ -14,22 +31,35 @@
 </head>
 <body>
 	<div id="loading">LOADING</div>
-	<section id="landing">
-		<h2>Project VROOM</h2>
-		<img src="assets/img/VroomFinalLogo.png">
-		<section>
-		<p class="words"><strong>VROOM</strong> is partnering with <a href="http://uwecocar.com/"><strong>UW EcoCar</strong></a> to create a head-up-display <strong>(H.U.D.)</strong> user interface on the car windshield, which will increase the visibility of energy consumption and car diagnostics to drivers while <strong>promoting a safe-driving experience</strong>.</p>
-		<p><strong>We're excited to share our work with you.</strong></p>
-		<strong>More info coming soon!</strong>
+	<section id="landing_section"><!--#link directly to this -->
+		<div id="landing" class="container">
+			<h2>Project VROOM</h2>
+			<img src="assets/img/VroomFinalLogo.png" id="landing_logo">
+			<img src="assets/img/next_arrow.png" id="landing_next" class="next">
+		</div>
 		</section>
 	</section>
 	<hr/>
-	<section id="links">
-		<h2>Contact</h2>
-		<section class="link_section">
-			<a href="http://github.com/vroomtech"><img src="assets/img/ghub.png" id="ghub" title="http://github.com/vroomtech"></a>
+	<section id="about_section"> <!--#link directly to this -->
+		<div id="about" class="container">
+			<h2>About VROOM</h2>
+			<p class="words"><strong>VROOM</strong> is partnering with <a href="http://uwecocar.com/"><strong>UW EcoCar</strong></a> to create a head-up-display <strong>(H.U.D.)</strong> user interface on the car windshield, which will increase the visibility of energy consumption and car diagnostics to drivers while <strong>promoting a safe-driving experience</strong>.</p>
+			<p><strong>We're excited to share our work with you.</strong></p>
+			<strong>More info coming soon!</strong>
+			<img src="assets/img/next_arrow.png" id="about_next" class="next">
+
+		</div>
+	</section>
+	<hr/>
+	<section id="links_section">
+		<div id="links" class="container">
+			<h2>Contact</h2>
+			<section class="link_icon">
+				<a href="http://github.com/vroomtech"><img src="assets/img/ghub.png" id="ghub" title="http://github.com/vroomtech"></a>
 			<span class="link_title" id="ghub_title">github<span>
 		</section>
+	<!--	<span id="email_link"><strong>Email</strong></span> -->
+		</div>
 	</section>
 </body>
 

@@ -44,26 +44,67 @@ a:hover{
 section{
 	position: relative;
 	text-align: center;
+	width: 100%;
+	height: 100%;
+	height: 100vh;
+	display: inline-block;
 }
 /*
 Custom page elements, highest-level ordering
 */
-#landing{
-	width: 100%;
-	margin-bottom: 5%;
-/*	top: 50%;
-	bottom: -50%;
-*/
+.container{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;	
 }
-#landing img{
+.container img{
+	width: 35px;
+}
+.next{
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	margin-left: -18px;
+	background-color: #bdc3c7;
+	padding: 10px;
+	border-radius: 35px;
+	border-width: 2px;
+	border-color: #030303;
+	width: 35px;
+	-webkit-transition: all 0.8s, ease-in-out;
+	-moz-transition: all 0.8s, ease-in-out;
+	-ms-transition: all 0.8s, ease-in-out;
+	-o-transition: all 0.8s, ease-in-out;
+	transition: all 0.8s, ease-in-out;
+}
+.next:hover{
+	background-color: #7f8c8d;
+	cursor: pointer;
+}
+#landing{
+	background: url("assets/img/Dash.png");
+}
+#landing_logo{
+	margin-top: 50px;
 	width: 35%;
 	max-width: 350px;
 	margin-bottom: 25px;
 }
+#about{
+	position: absolute;
+	top: 50%;
+	margin-top: -200px;
+}
 #links{
+	top: 50%;
+	margin-top: -100px;
+}
+#links_section{
 	margin-bottom: 5%;
 }
-.link_section{
+.link_icon{
 	display: inline-block;
 	padding: 0;
 }
@@ -98,6 +139,8 @@ Custom page elements, highest-level ordering
 	cursor: pointer;
 /*	top: -5px;*/
 }
+#email_link{
+}
 @media screen and (max-width: 600px) {
     #links img{
         background-color: #C7C8C8;
@@ -112,8 +155,9 @@ Custom page elements, highest-level ordering
 }
 .link_title{
 	position: absolute;
-	left: 9px;
-	top: 52px;
+	left: 50%;
+	margin-left: -25px;
+	top: 65px;
 	opacity: 0;
 	cursor: default;
 
