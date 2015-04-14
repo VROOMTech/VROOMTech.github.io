@@ -67,7 +67,7 @@ Custom page elements, highest-level ordering
 	position: absolute;
 	bottom: 50px;
 	left: 50%;
-	margin-left: -18px;
+	margin-left: -26px;
 	background-color: #bdc3c7;
 	padding: 10px;
 	border-radius: 35px;
@@ -83,6 +83,9 @@ Custom page elements, highest-level ordering
 .next:hover{
 	background-color: #7f8c8d;
 	cursor: pointer;
+}
+#landing_section{
+	max-height: 1050px;
 }
 #landing{
 	background: url("assets/img/Dash.png");
@@ -103,11 +106,13 @@ Custom page elements, highest-level ordering
 	margin-top: -100px;
 }
 #links_section{
-	margin-bottom: 5%;
+	/*margin-bottom: 5%;*/
 }
-.link_icon{
+#link_icon{
 	display: inline-block;
 	padding: 0;
+	min-height: 32px;
+	max-height: 128px;
 }
 #links img{
 	position: relative;
